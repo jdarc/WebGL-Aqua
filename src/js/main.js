@@ -44,7 +44,7 @@ const Demo = canvas => {
     light2.position.set(0, 8, 20);
     scene.add(light2);
 
-    const water = new Water(isFireFox() ? 256 : 512);
+    const water = new Water(isFireFox() ? 300 : 512);
     const geometry = new THREE.PlaneBufferGeometry(9, 9, water.size - 1, water.size - 1);
     const positions = geometry.getAttribute("position");
     const normals = geometry.getAttribute("normal");
